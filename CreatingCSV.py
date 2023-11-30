@@ -14,6 +14,6 @@ data = response.json()['entries']
 df = pd.DataFrame(data)
 
 # Save the DataFrame to a CSV file
-df.to_csv('data23.csv', index=False, )
+df.to_csv('data.csv', index=False, )
 print('CSV file is saved in your device and also print in the terminal')
 print(df)
