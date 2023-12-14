@@ -1,8 +1,5 @@
-elease_year", "rating", "duration", "listed_in"]
-    data = remove_outliers_iqr(data, columns_to_check)
-    
+# Load the dataset
+data = pd.read_csv('dataset - netflix1.csv')
 
-# Save the cleaned dataset
-data.to_csv('cleaned2_dataset.csv', index=False)
-print("cleaned data is pribted in the terminal and saved as correspond file in the same folder")
-print(data)
+# Replace missing values with a specific value or strategy for all columns
+data.fillna(value=0, inplace=True)  # Replace missing values with 0
